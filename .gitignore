@@ -1,0 +1,66 @@
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === JUPYTER ===
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# === DATA (nur große/generierte Dateien) ===
+data/processed/          # Generierte/aufbereitete Daten
+data/external/           # Von APIs heruntergeladene Daten
+outputs/                 # Generated outputs
+models/                  # Trainierte ML-Modelle
+*.pkl
+*.pickle
+*.joblib
+*.h5
+
+# === ABER: Rohdaten EINCHECKEN (sind nur 7MB) ===
+# data/raw/ wird NICHT ignoriert - diese checken wir ein!
+
+# === ENVIRONMENTS ===
+.env
+.venv
+venv/
+env/
+.uv/
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === SECRETS ===
+config/secrets.yaml
+*.key
+*.pem
+.env.local
